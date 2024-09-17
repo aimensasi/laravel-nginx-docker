@@ -1,0 +1,52 @@
+
+# Ignore development and version control files
+.git
+.gitignore
+.vscode
+.idea
+
+# Ignore build artifacts and dependencies
+node_modules
+dist
+build
+*.log
+
+# Ignore environment-specific files
+.env
+.env.*
+
+# Ignore documentation and README files
+*.md
+docs
+
+# Ignore test files
+__tests__
+*.test.js
+*.spec.js
+
+# Ignore Docker-related files (except Dockerfile)
+.dockerignore
+docker-compose*.yml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore package manager files
+yarn-error.log
+npm-debug.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
+
+# Ignore large media files
+*.mp4
+*.mov
+*.wav
+*.mp3
+
+# Ignore backup files
+*.bak
+*.backup
