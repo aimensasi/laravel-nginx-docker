@@ -7,10 +7,11 @@
 
 2. Copy files into your project:
 
-    a. Place the `Dockerfile` and `.dockerignore` files inside the root directory
-    b. Create a `docker` directory and add the rest of the files into it
+   a. Place the `Dockerfile` and `.dockerignore` files inside the root directory
 
-3. Install NPM Dependencies:
+   b. Create a `docker` directory and add the rest of the files into it
+
+4. Install NPM Dependencies:
     The Dockerfile uses Bun to install dependencies for faster builds.
     Change your package.json to use Bun by running:
    
@@ -20,14 +21,14 @@
    
     This will generate the `bun.lock` file
 
-4. Build the Docker image:
+5. Build the Docker image:
    
     ```
         docker build -t your-image-name .
     ```
    
 
-5. Use Docker Compose to run the application:
+6. Use Docker Compose to run the application:
     The `docker-compose.yml` file will help generate the necessary services and allow you to pass your environment variables.
    
     ```
@@ -35,4 +36,3 @@
     ```
 
     This will start your application in detached mode. You can now verify that it's running as expected.
-
