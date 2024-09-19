@@ -8,16 +8,6 @@ initialStuff() {
     php artisan config:cache
     php artisan route:cache
     php artisan livewire:publish --assets
-
-    if [ "${RUN_MIGRATIONS}" = "true" ]; then
-        echo "Running migrations..."
-        php artisan migrate --isolated --force
-    fi
-
-    if [ "${RUN_SEEDERS}" = "true" ]; then
-        echo "Seeding database..."
-        php artisan db:seed --force
-    fi
 }
 
 # Run initial setup

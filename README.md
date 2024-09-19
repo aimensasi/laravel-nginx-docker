@@ -6,6 +6,7 @@
    
 
 2. Copy files into your project:
+
     a. Place the `Dockerfile` and `.dockerignore` files inside the root directory
     b. Create a `docker` directory and add the rest of the files into it
 
@@ -34,3 +35,4 @@
     ```
 
     This will start your application in detached mode. You can now verify that it's running as expected.
+
